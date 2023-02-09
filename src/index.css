@@ -13,8 +13,6 @@
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
   text-decoration: inherit;
   text-decoration: none;
 }
@@ -32,6 +30,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 0 16px;
 }
 
 h1 {
