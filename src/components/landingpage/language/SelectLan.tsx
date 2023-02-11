@@ -20,7 +20,7 @@ export const SelectLan = (): JSX.Element => {
     <label htmlFor="selectLanguage">
       <Select id="selectLanguage" name="selectLanguage">
         <option value="en">EN</option>
-        <option value="en">ZH-HAN</option>
+        <option value="en">ZH-TW</option>
       </Select>
     </label>
   );
