@@ -24,6 +24,15 @@ li {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+p {
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -39,7 +48,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 3px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -50,7 +59,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: hsl(339, 59%, 57%);
 }
 button:focus,
 button:focus-visible {

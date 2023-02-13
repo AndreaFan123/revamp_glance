@@ -1,24 +1,68 @@
 import styled from 'styled-components';
-import { COLORS } from '../../../style/styles';
+import { COLORS, FONTSIZE, PADDING } from '../../../style/styles';
 
-const LoginWrapper = styled.section`
+const Wrapper = styled.section`
   width: 100%;
-  max-width: 40%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  border: 1px solid ${COLORS.textDarkcolor};
+  align-items: center;
 `;
 
-const ImageContainer = styled.div`
-  width: 300px;
-  height: 300px;
-  border-right: 1px solid ${COLORS.textDarkcolor};
+const LoginWrapper = styled.form`
+  width: 100%;
+  max-width: 50%;
+  height: 500px;
+  display: flex;
+  /* border: 1px solid ${COLORS.textDarkcolor}; */
+  background-color: ${COLORS.mainBrandColor};
+  border-radius: 3px;
+  box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
+  -webkit-box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
+  -moz-box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
+`;
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+const GreetingContainer = styled.div`
+  width: 40%;
+  padding: ${PADDING.paddingXXL};
+
+  h2 {
+    color: ${COLORS.textLightColor};
+    font-size: 4rem;
+  }
+
+  p {
+    color: ${COLORS.superLightBrandColor};
+    padding-bottom: ${PADDING.paddingS};
   }
 `;
 
-export { LoginWrapper, ImageContainer };
+const FormInputContainer = styled.div`
+  width: 50%;
+  background-color: ${COLORS.white};
+`;
+
+const InputsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  padding-left: ${PADDING.paddingS};
+  padding-right: ${PADDING.paddingL};
+  gap: 1rem;
+
+  input {
+    width: 96%;
+    display: block;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid ${COLORS.mainBrandColor};
+  }
+`;
+
+export {
+  Wrapper,
+  LoginWrapper,
+  GreetingContainer,
+  FormInputContainer,
+  InputsContainer,
+};
