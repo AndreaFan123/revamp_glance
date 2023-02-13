@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import {} from 'react-router-dom';
 import { LandingPage, SignupPage, LoginPage, Dashboard } from './pages/index';
+import './i18n';
 
 export const router = createBrowserRouter([
   {

@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "login": "登入",
+    "signup": "註冊",
+    "email": "信箱",
+    "password": "密碼",
+    "confirmPassword": "確認密碼",
+    "submit": "送出"
+  }
+}

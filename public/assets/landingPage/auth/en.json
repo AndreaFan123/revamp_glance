@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "login": "Login",
+    "signup": "Signup",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Submit"
+  }
+}
