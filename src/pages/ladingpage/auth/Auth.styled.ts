@@ -1,68 +1,90 @@
 import styled from 'styled-components';
-import { COLORS, FONTSIZE, PADDING } from '../../../style/styles';
+import { COLORS, FONTSIZE, MARGIN, PADDING } from '../../../style/styles';
 
-const Wrapper = styled.section`
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const LoginWrapper = styled.form`
-  width: 100%;
-  max-width: 50%;
+const LoginWrapper = styled.section`
+  max-width: 800px;
   height: 500px;
-  display: flex;
-  /* border: 1px solid ${COLORS.textDarkcolor}; */
-  background-color: ${COLORS.mainBrandColor};
-  border-radius: 3px;
-  box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
-  -webkit-box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
-  -moz-box-shadow: 10px 14px 38px 0px rgba(151, 149, 149, 0.73);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 0 5px 5px 0;
+  /* border: 1px solid ${COLORS.mainBrandColor}; */
+  box-shadow: 11px 3px 46px -9px rgba(77, 74, 74, 0.75);
+  -webkit-box-shadow: 11px 3px 46px -9px rgba(77, 74, 74, 0.75);
+  -moz-box-shadow: 11px 3px 46px -9px rgba(77, 74, 74, 0.75);
+
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
 `;
 
-const GreetingContainer = styled.div`
-  width: 40%;
-  padding: ${PADDING.paddingXXL};
+const GreetingLeft = styled.div`
+  flex: 1;
+  background-color: ${COLORS.mainBrandColor};
+  color: ${COLORS.textLightColor};
+  padding: ${PADDING.paddingXL};
+  border-radius: 5px 0 0 5px;
 
   h2 {
-    color: ${COLORS.textLightColor};
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   p {
+    font-size: ${FONTSIZE.fontS};
     color: ${COLORS.superLightBrandColor};
-    padding-bottom: ${PADDING.paddingS};
+  }
+
+  button {
+    margin-top: ${MARGIN.marginM};
+    background-color: ${COLORS.textLightColor};
+
+    :hover,
+    :active {
+      background-color: ${COLORS.superLightBrandColor};
+    }
   }
 `;
 
-const FormInputContainer = styled.div`
-  width: 50%;
-  background-color: ${COLORS.white};
-`;
-
-const InputsContainer = styled.div`
+const InputRight = styled.div`
+  height: 50%;
+  flex: 1;
+  padding: ${PADDING.paddingXL};
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
-  padding-left: ${PADDING.paddingS};
-  padding-right: ${PADDING.paddingL};
-  gap: 1rem;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+
+  h3 {
+    font-size: ${FONTSIZE.fontM};
+    padding-top: ${PADDING.paddingXXL};
+    padding-bottom: ${PADDING.paddingS};
+  }
+
+  label {
+  }
 
   input {
-    width: 96%;
-    display: block;
-    padding: 5px;
+    padding: 5px 5px;
     border: none;
     border-bottom: 1px solid ${COLORS.mainBrandColor};
   }
+
+  button {
+    background-color: ${COLORS.mainBrandColor};
+    color: ${COLORS.textLightColor};
+    margin-top: ${MARGIN.marginS};
+
+    :hover,
+    :active {
+      color: ${COLORS.mainBrandColor};
+      background-color: ${COLORS.superLightBrandColor};
+    }
+  }
 `;
 
-export {
-  Wrapper,
-  LoginWrapper,
-  GreetingContainer,
-  FormInputContainer,
-  InputsContainer,
-};
+export { LoginWrapper, GreetingLeft, InputRight };
