@@ -2,6 +2,7 @@
   "auth": {
     "login": "Login",
     "signup": "Signup",
+    "displayName": "Display Name",
     "email": "Email",
     "password": "Password",
     "confirmPassword": "Confirm Password",

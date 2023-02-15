@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { LandingPageNav, Logo, SelectLan } from '../../components/landingpage';
-import { Sun } from 'feather-icons-react';
+// import { Sun } from 'feather-icons-react';
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -22,7 +22,7 @@ export const LandingPage = (): JSX.Element => {
       <Logo />
       <NavRight>
         <SelectLan />
-        <Sun />
+        {/* <Sun /> */}
         <LandingPageNav />
       </NavRight>
     </NavWrapper>
