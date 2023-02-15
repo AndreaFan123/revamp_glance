@@ -1,30 +1,26 @@
-import styled from 'styled-components';
+import { NavWrapper, NavRight, HeaderContainer } from './Landing.styled';
 import { LandingPageNav, Logo, SelectLan } from '../../components/landingpage';
-// import { Sun } from 'feather-icons-react';
-
-const NavWrapper = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-const NavRight = styled.div`
-  display: flex;
-  width: 30%;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1.5rem;
-`;
+import { FiSun } from 'react-icons/fi';
 
 export const LandingPage = (): JSX.Element => {
   return (
-    <NavWrapper>
-      <Logo />
-      <NavRight>
-        <SelectLan />
-        {/* <Sun /> */}
-        <LandingPageNav />
-      </NavRight>
-    </NavWrapper>
+    <>
+      <NavWrapper>
+        <Logo />
+        <NavRight>
+          <SelectLan />
+          <FiSun color="black" fontSize="1.5em" />
+          <LandingPageNav />
+        </NavRight>
+      </NavWrapper>
+      <HeaderContainer>
+        <h1>Glance</h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, book.
+        </p>
+      </HeaderContainer>
+    </>
   );
 };
