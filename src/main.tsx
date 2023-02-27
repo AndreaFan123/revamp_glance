@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
+import './i18n';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
-import {} from 'react-router-dom';
-import { LandingPage, SignupPage, LoginPage, Dashboard } from './pages/index';
-import './i18n';
+import { LandingPage, LoginPage, SignupPage } from './pages/ladingpage';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <LandingPage />,
-  },
-  {
-    path: '/signup',
-    element: <SignupPage />,
+    loader: () => import('./pages/ladingpage/LandingPage'),
   },
   {
     path: '/login',
     element: <LoginPage />,
+    loader: () => import('./pages/ladingpage/auth/LoginPage'),
   },
   {
-    path: '/dashboard',
-    element: <Dashboard />,
+    path: '/signup',
+    element: <SignupPage />,
+    loader: () => import('./pages/ladingpage/auth/SignupPage'),
   },
 ]);
 

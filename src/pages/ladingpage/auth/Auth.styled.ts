@@ -6,6 +6,7 @@ import {
   MARGIN,
   PADDING,
 } from '../../../style/styles';
+import { Link } from 'react-router-dom';
 
 const LoginWrapper = styled.section`
   max-width: 800px;
@@ -45,6 +46,26 @@ const GreetingLeft = styled.div`
   p {
     font-size: ${FONTSIZE.fontS};
     color: ${COLORS.superLightBrandColor};
+    margin-bottom: ${MARGIN.marginM};
+  }
+`;
+
+const HomeLink = styled(Link)`
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid ${COLORS.superLightBrandColor};
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    color: ${COLORS.textDarkcolor};
+    transition: all 0.3s ease-in-out;
+    background-color: ${COLORS.superLightBrandColor};
+  }
+  &:active {
+    color: red;
   }
 `;
 
@@ -115,6 +136,7 @@ const InputRight = styled.div`
 
     :hover,
     :active {
+      transition: all 0.3s ease-in-out;
       color: ${COLORS.mainBrandColor};
       background-color: ${COLORS.superLightBrandColor};
     }
@@ -156,4 +178,5 @@ export {
   InputRight,
   EyeIconPassword,
   EyeIconConfirmPassword,
+  HomeLink,
 };

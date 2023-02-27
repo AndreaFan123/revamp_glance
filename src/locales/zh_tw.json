@@ -5,6 +5,7 @@
     "email": "信箱",
     "password": "密碼",
     "confirmPassword": "確認密碼",
-    "submit": "送出"
+    "submit": "送出",
+    "goBackHome": "回到首頁"
   }
 }

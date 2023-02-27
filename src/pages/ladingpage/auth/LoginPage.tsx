@@ -6,11 +6,12 @@ import {
   GreetingLeft,
   InputRight,
   EyeIconPassword,
+  HomeLink,
 } from './Auth.styled';
 import { FiEyeOff } from 'react-icons/fi';
 
 export const LoginPage = (): JSX.Element => {
-  const { t } = useTranslation(['auth']);
+  const { t, i18n } = useTranslation(['auth']);
   return (
     <LoginWrapper>
       <form>
@@ -21,6 +22,9 @@ export const LoginPage = (): JSX.Element => {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, book.
           </p>
+          <div>
+            <HomeLink to="/">{t('Back to Home Page')}</HomeLink>
+          </div>
         </GreetingLeft>
         <InputRight>
           <h3>

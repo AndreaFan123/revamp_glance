@@ -6,6 +6,7 @@
     "email": "Email",
     "password": "Password",
     "confirmPassword": "Confirm Password",
-    "submit": "Submit"
+    "submit": "Submit",
+    "goBackHome": "Back to Home Page"
   }
 }

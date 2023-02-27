@@ -7,6 +7,7 @@ import {
   InputRight,
   EyeIconPassword,
   EyeIconConfirmPassword,
+  HomeLink,
 } from './Auth.styled';
 import { FiEyeOff } from 'react-icons/fi';
 
@@ -22,6 +23,9 @@ export const SignupPage = (): JSX.Element => {
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, book.
           </p>
+          <div>
+            <HomeLink to="/">{t('Back to Home Page')}</HomeLink>
+          </div>
         </GreetingLeft>
         <InputRight>
           <h3>
